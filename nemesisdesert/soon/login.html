@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title> The Best MMORPG | Black Desert Online </title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920, user-scalable=yes, maximum-scale=1">
+	<meta name="description" content="Black Desert Online is the next-gen action driven sandbox MMORPG. Featuring one of the richest character creation systems, an immense seamless world, and epic Siege Wars.">
+	<meta name=“keywords” content=“black desert, BDO, game, MMORPG, online game, RPG, role playing, open world, black desert forum, BDO forum, kakao games”>
+
+	<link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="static/blackdesert.ico" type="image/x-icon">
+	<link rel="icon" href="https://akamai-webcdn.kgstatic.net/renewal/static/blackdesert.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="static/css/common4ba8.css?v=202003131130">
+
+	<style>
+		
+		@media (max-width: 1800px) {
+							.gnb_comm .link_gnb{padding:34px 21px !important}
+					}
+	</style>
+	<script type="text/javascript" src="../akamai-webcdn.kgstatic.net/renewal/static/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../akamai-webcdn.kgstatic.net/renewal/static/js/common94c8.js?v=202003131440"></script>
+</head>
+<body>
+<script>
+	window.cookieconsent_options = {"theme":"dark-bottom","domain":".blackdesertonline.com", "message":"I agree to the use of cookies by Kakao Games on the website for personalized marketing purposes.","dismiss":"Accept","learnMore":"More information","link":"https://www.blackdesertonline.com/legal/privacy-policy"};
+</script>
+<script type="text/javascript" src="../akamai-webcdn.kgstatic.net/renewal/static/cookieconsent/cookieconsent30f4.js?v=3"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-939288197"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-939288197');
+  gtag('config', 'AW-808304736');
+</script>
+<script>
+	var GA_ID = "UA-68713027-5";
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','../connect.facebook.net/en_US/fbevents.js');
+	
+</script>
+<script>
+
+var setting_third_party = function(cookieFlag){
+	if(cookieFlag == "accept"){
+		if(typeof fbq == 'function'){
+			fbq('consent', 'grant');
+			fbq('init', '1793387054280743');
+			fbq('track', "PageView");
+		}
+		
+		if(typeof ga == 'function'){ 
+		
+			ga('create', GA_ID, 'auto');
+			ga('set', 'userId', '${uid}');
+						ga('require', 'ecommerce');
+		  	ga('send', 'pageview');
+		  	
+		  													ga('send', 'event', 'page_login', 'login' , 'EN', '');
+		
+		}
+	  	
+	}else{
+		if(typeof fbq == 'function'){ 
+			fbq('consent', 'revoke');
+		}
+		if(typeof ga == 'function'){ 
+			ga('create', GA_ID, {'storage': 'none'});
+		}
+	}
+
+}
+	if( cookie_check_ok() ) {
+		setting_third_party("accept"); 
+	} else {
+		setting_third_party("none");
+	}
+	
+</script>
+
+<script>
+window.fbAsyncInit = function() {
+   FB.init({
+     appId            : '663791690327711',
+     autoLogAppEvents : true,
+     xfbml            : true,
+     version          : 'v5.0'
+   });
+   FB.AppEvents.logPageView();
+};
+
+(function(d, s, id){
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement(s); js.id = id;
+   js.src = "../connect.facebook.net/en_US/sdk.js";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+  function fb_login() {
+  	FB.login(function(response) {
+	    if (response.authResponse) {
+	       var accessToken = response.authResponse.accessToken;
+	       FB.api('/me', {fields: 'email'}, function(me) {
+	   		$('#accessToken').val(accessToken);
+	   		$('#socialId').val(me.id);
+	   		$('#socialType').val('FACEBOOK');
+	   		$('#socialEmail').val(me.email);
+	   		$('#loginForm').submit();
+	       });
+	    } else {
+	     console.log('User cancelled login or did not fully authorize.');
+	    }
+	}, {scope: 'email'});
+  }
+</script>
+
+
+
+
+<div id="kakaoHead" class="k_head ">
+	
+	<div class="inner_head">
+		<h1 class="tit_black"><a href="index.html" class="link_sale"><img src="../akamai-webcdn.kgstatic.net/renewal/static/images/main/logo_1.png" class="img_g" alt="LOGO"></a></h1>
+		<div id="kakaoGnb">
+			<h2 class="screen_out">Black Desert Menu</h2>
+			<ul class="gnb_comm en">
+				<li>
+					<a href="news/list.html" class="link_gnb">NOTICIAS</a>
+					<div class="gnb_sub">
+						<ul class="list_sub">
+							<li><a href="news/list/announcement.html" class="link_gnb_sub">AVISOS</a></li>
+							<li><a href="news/list/event.html" class="link_gnb_sub">EVENTOS</a></li>
+							<li><a href="news/list/maintenance.html" class="link_gnb_sub">MANUTENÇÃO</a></li>
+							<li><a href="news/list/update.html" class="link_gnb_sub">ATUALIZAÇÕES</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<span class="link_gnb">SHOP</span>
+					<div class="gnb_sub">
+						<ul class="list_sub">
+							<li><a href="shop/package.html" class="link_gnb_sub">PACOTES</a></li>
+							<li><a href="shop/cash.html" class="link_gnb_sub">CASH EM JOGO</a></li>
+							<li><a href="shop/redeem.html" class="link_gnb_sub">RESGATAR CUPOM</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="download.html" class="link_gnb">DOWNLOAD</a></li>
+				<li>
+					<span class="link_gnb">COMUNIDADE</span>
+					<div class="gnb_sub">
+						<ul class="list_sub">
+							<li><a href="https://community.blackdesertonline.com/" target="_blank" class="link_gnb_sub">FORUM<span class="img_black ico_link"></span></a></li>
+							<li>
+								<a class="link_gnb_sub">PATROCINADORES</a>
+								<!-- 2019-06-18 추가 시작 -->
+								<ul class="list_sub2">
+									<li><a href="partners.html" class="link_gnb_sub2"><span class="txt_g">SE INSCREVA</span></span></a></li>
+									<li><a href="halloffame.html" class="link_gnb_sub2"><span class="txt_g">HALL DA FAMA
+</span></span></a></li>
+								</ul>
+								<!-- // 2019-06-18 추가 끝 -->
+							</li>
+
+							<li><a href="https://www.discord.gg/kakaogames" class="link_gnb_sub" target="_blank">DISCORD</a></li>
+							<li><a href="https://nwiki.blackdesertonline.com/" target="_blank" class="link_gnb_sub">WIKI<span class="img_black ico_link"></span></a></li>
+							<li><a href="giftpackage.html" class="link_gnb_sub">PACOTE GIFT</a></li></a>
+							<li><a href="guestpass.html" class="link_gnb_sub">PACOTE FANTASMA</a></li>
+							<li><a href="referral.html" class="link_gnb_sub">REFERÊNCIAS</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="https://downspot.ga/" id="" class="link_gnb" style="cursor:pointer" data-locale="EN">DOWNSPOT<span class="img_black ico_link"></span></a></li>
+			</ul>
+			<ul class="gnb_with">
+				<li>
+					<strong class="screen_out">Language setting</strong>
+					<div class="opt_language">
+		                <strong class="screen_out">Language Select Box</strong>
+		                <div class="link_selected"><span class="img_black ico_lang"></span>PORTUGUÊS<span class="screen_out">Selected</span></div>
+		                <input type="hidden" value="Language Select">
+		                <div class="box_opt">
+		                    <em class="screen_out">Select Option</em>
+		                    <ul class="list_opt">
+		                    																																<li><a href="lang=EN.html" class="link_option gnb_lang_link" data-value="EN">INGLÊS</a></li>
+																																<li><a href="lang=ES.html" class="link_option gnb_lang_link" data-value="ES">ESPANHOL</a></li>
+																	                    </ul>
+		                </div>
+		            </div>
+					<div id="_languageForm"></div>
+				</li>
+									<li><a href="login.html" class="link_gnb">ENTRAR</a></li>
+					<li><a href="register.html" class="link_gnb">REGISTRAR-SE</a></li>
+				
+									<li><a href="" class="link_sale"><img src="../akamai-webcdn.kgstatic.net/renewal/static/images/events/remaster/WAR_PT.png" class="img_g" alt="BUY NOW -60%"></a></li>
+							</ul>
+		</div>
+	</div>
+</div><!-- // kakaoHead -->
+<script type="text/javascript">
+$(document).ready(function($) {
+	var language_json = {};
+	var form = $("<form/>", {id:'__languageForm',action:'',method:"GET"} );
+	for(var key in language_json) {
+		form.append( $("<input>",{type:'hidden',name:key,value:language_json[key]}) );
+	}
+	$("#_languageForm").append(form);
+
+	$(".gnb_lang_link").on("click",function(){
+		var form =$("#__languageForm");
+		form.append( $("<input>",{type:'hidden',name:'lang',value:$(this).attr("data-value")}) );
+		form.submit();
+	});
+});
+</script>
+<hr class="hide">
+<div class="cont_login" id="kakaoContent">
+	<div id="cMain">
+		<div id="mArticle">
+			<div class="bg_cover"></div>
+			<div class="detail_black">
+				<h2 class="tit_detail" id="kakaoBody">MEMBER LOGIN </h2>
+				<form id="loginForm" name="form" action="https://www.blackdesertonline.com/login" method="post">
+					<fieldset>
+						<legend class="screen_out">login form</legend>
+						<input type="hidden" id="accessToken" name="accessToken" value="" />
+						<input type="hidden" id="socialId" name="socialId" value="" />
+						<input type="hidden" id="socialType" name="socialType" value="" />
+						<input type="hidden" id="socialEmail" name="socialEmail" value="" />
+						<input type="hidden" id="tsvToken" name="tsvToken" value="" />
+						<input type="hidden" id="password_more" name="password_more" value="" />
+						<input type="hidden" id="restoreKey" name="restoreKey" value="" />
+						<input type="hidden" id="returnUrl" name="returnUrl" value="" />
+						<input type="hidden" id="ept" name="ept" value="">
+						<div class="form_login">
+							<div class="group_set email">
+								<!-- 에러일 때 error 클래스 추가 -->
+								<div class="box_tf">
+								<!--  remove autocomplete -->
+																	<label class="img_black ico_email" for="email">Email</label> 
+									<input class="tf_comm" id="email" name="email" placeholder="Email" type="text"  value="" > 
+									<span class="img_black ico_error"></span>
+								</div>
+								<span class="txt_error"></span>
+							</div>
+							<div class="group_set password">
+								<!-- 에러일 때 error 클래스 추가 -->
+								<!--  remove autocomplete -->
+																<!-- real input  -->
+								<div class="box_tf">
+									<label class="img_black ico_password" for="password">Password (8~30 Characters)</label> 
+									<input class="tf_comm" id="password" name="password" placeholder="Password (8~30 Characters)" type="password"  value="" >
+									<span class="img_black ico_error"></span>
+								</div>
+								<span class="txt_error"></span>
+							</div>
+							
+							<div class="group_set common ">
+								<span class="txt_error"></span>
+							</div>
+							
+							<!-- recaptcha box -->
+ 							<div class="g-recaptcha box_captcha" data-sitekey="6Lc_P6wUAAAAANYq5uDyBkyNW8WayS4Q9jLvhFm_" name="recaptcha"></div>
+ 								<div class="group_set recaptcha ">
+								<span class="txt_error"></span>
+							</div>
+							
+							<div class="choice_comm choice_check">
+								<input class="inp_comm" id="rememberEmail" name="rememberEmail" type="checkbox"> <label class="lab_comm" for="rememberEmail">
+								<span class="img_black"></span> Remember my email</label>
+							</div>
+							<button class="btn_black" type="submit"><span class="inner_btn">LOGIN</span></button>
+						</div>
+					</fieldset>
+				</form>
+				<ul class="rel_login">
+					<li>
+						<a class="link_rel" href="register.html">Create your account</a>
+					</li>
+					<li>
+						<a class="link_rel" href="account/forgotPassword.html">Forgot password?</a>
+					</li>
+				</ul>
+				<div class="social_account">
+					<span class="txt_social">
+						<span class="inner_txt">Or</span>
+					</span> 
+					<a href="javascript:;" class="btn_black btn_facebook" onclick="fb_login();">
+						<span class="inner_btn">
+							<span class="img_black ico_facebook"></span>Login with Facebook</span>
+						</span>
+					</a>
+				</div>
+			</div>
+				
+		</div><!--// mArticle -->
+		<div class="black_follow" id="cEtc">
+	<h2 class="tit_follow">FOLLOW US</h2>
+	<ul class="list_sns">
+		<li>
+			<a class="img_black link_facebook" href="https://www.facebook.com/BlackDesertOnline" target="_blank">Facebook</a>
+		</li>
+		<li>
+			<a class="img_black link_twitter" href="https://twitter.com/BDO_news" target="_blank">Twitter</a>
+		</li>
+		<li>
+			<a class="img_black link_youtube" href="https://www.youtube.com/channel/UCcO-TjLkDNzvYrlPkOHgnfA" target="_blank">Youtube</a>
+		</li>
+		<li>
+			<a class="img_black link_instagram" href="https://www.instagram.com/blackdesertonline_official/" target="_blank">Instagram</a>
+		</li>
+		<li>
+		<a class="img_black link_twich" href="https://www.twitch.tv/blackdesertonlineofficial/" target="_blank">Twitch</a>
+		</li>
+		<li>
+		<a class="img_black link_discord" href="https://discord.gg/kakaogames" target="_blank">Twitch</a>
+		</li>
+	</ul>
+</div>
+
+	</div><!-- // cMain -->
+</div><!-- // kakaoContent -->
+<div class="dimmed_layer"></div>
+<div class="popup_layer verify_layer">
+	<div class="inner_layer">
+		<div class="layer_head">
+			<strong class="tit_verify">2-Step Verification</strong>
+		</div>
+		<div class="layer_body">
+			<div class="inner_body">
+				<p class="desc_verify">You have activated 2-Step verification on your account to improve its security.<br>Please enter a verification code from Google Authenticator.</p>
+				<div class="group_set ">
+					<!-- 에러일 때 error 클래스 추가 -->
+					<label class="lab_comm" for="verifyCode">Verification Code</label>
+					<div class="box_tf">
+						<input class="tf_comm" id="verifyCode" name="verifyCode" type="text" maxlength="6" autocomplete="off"> <span class="img_black ico_error"></span>
+					</div><span class="txt_error"></span>
+				</div>
+				<div class="wrap_btn">
+					<a class="btn_black btn_cancel" href="javascript:;"><span class="inner_btn">Cancel</span></a>
+					<a class="btn_black btn_ok" href="javascript:;"><span class="inner_btn">Login</span></a> 
+				</div>
+				<p class="txt_verify">Having trouble login in? Contact <a href="https://blackdesert.zendesk.com/hc/en-us" target="_blank">Customer Support</a></p>
+			</div>
+		</div>
+		<div class="layer_foot">
+			<a class="btn_close img_black" href="#none">Close</a>
+		</div>
+	</div>
+</div><!-- // success alert -->
+<div class="popup_layer restore_layer">
+		<div class="inner_layer" style="height:599px;">
+			<div class="line_layer">
+			<div class="layer_head">
+				<strong class="tit_verify">Restore Account</strong>
+			</div>
+			<div class="layer_body">
+				<div class="inner_body">
+					<div class="group_set">
+					Your account is already under deletion request.<br><br>
+					<span class="restore_dttm">Deletion request submitted: $delete_dttm </span><br>
+					<span class="restore_dttm">Deletion request cancellable before: $restore_dttm</span> <br><br>
+					Kakao Games allows you to restore an account under deletion<br>
+request within 14 days of the request.<br>
+Once 14 days are passed from the request of account deletion,<br>
+you cannot restore your account.
+					</div>
+					<div class="wrap_btn">
+						<a class="btn_black btn_ok" href="javascript:;"><span class="inner_btn">RESTORE ACCOUNT</span></a>
+						<a class="btn_black btn_cancel" href="javascript:;"><span class="inner_btn">CLOSE</span></a> 
+					</div>
+				</div>
+			</div>
+			<div class="layer_foot">
+				<a class="btn_close img_black" href="#none">Close</a>
+			</div>
+		</div>
+	</div>
+</div><!--  // restore layer -->
+<div class="popup_layer restore_pass_layer">
+	<div class="inner_layer">
+		<div class="line_layer">
+			<div class="layer_head">
+				<strong class="tit_verify">Restore Account</strong>
+			</div>
+			<div class="layer_body">
+				<div class="inner_body">
+					<p class="desc_verify">Re-enter your <br>password to confirm</p>
+					<div class="group_set">
+						<input class="tf_comm" id="restore_password" name="restore_password" type="password" autocomplete="off"> <span class="img_black ico_error"></span>
+						<span class="txt_error">err</span>
+					</div>
+					<div class="wrap_btn">
+						<a class="btn_black btn_ok" href="javascript:;"><span class="inner_btn">CONFIRM</span></a> 
+					</div>
+				</div>
+			</div>
+			<div class="layer_foot">
+				<a class="btn_close img_black" href="#none">Close</a>
+			</div>
+		</div>
+	</div>
+</div><!--  // restore_pass_layer layer -->
+<div class="popup_layer restore_confirm_layer">
+	<div class="inner_layer">
+		<div class="line_layer">
+			<div class="layer_head">
+				<strong class="tit_verify">Complete!</strong>
+			</div>
+			<div class="layer_body">
+				<div class="inner_body">
+					<p class="desc_verify">We have restored your deleted account.<br>
+We are glad to have you back!</p>
+					<div class="wrap_btn">
+						<a class="btn_black btn_main" href="javascript:;"><span class="inner_btn">OK</span></a> 
+					</div>
+				</div>
+			</div>
+			<div class="layer_foot">
+				<a class="btn_close img_black btn_main" href="#none" >Close</a>
+			</div>
+		</div>
+	</div>
+</div><!--  // restore_confirm_layer layer -->
+<script type="text/javascript" src="../akamai-webcdn.kgstatic.net/renewal/static/js/jquery-1.11.3.min.js"></script>
+<script src='../www.google.com/recaptcha/api.js'></script>
+<hr class="hide">
+<div id="kakaoFoot" class="k_foot">
+	<div class="inner_foot">
+		<h2 class="screen_out">Service Information</h2>
+		<div class="info_pegi">
+			<img src="../akamai-webcdn.kgstatic.net/renewal/static/images/img_pegi.png" class="img_g" alt="The content of this game is suitable for persons aged 16 years and over only. It contains: Realistic looking violence - Encouragement of the use of alcohol/tobacco">
+		</div>
+		<div class="info_company">
+			<a href="account/TermsOfUse.html" class="link_info en">TERMS OF USE</a>
+			<span class="txt_bar en">|</span>
+			<a href="account/AboutUs.html" class="link_info en">ABOUT US</a>
+			<span class="txt_bar en">|</span>
+			<a href="account/Policy.html" class="link_info en">PRIVACY POLICY</a>
+			<span class="txt_bar en">|</span>
+							<a href="https://blackdesert.zendesk.com/hc/en-us" target="_blank" class="link_info en">
+						SUPPORT</a>
+			<small class="txt_copyright en">&copy; 2015-2020 Kakao Games Europe B.V.<br>All copyrights and trademarks are the property of their respective owners.</small>
+		</div>
+		<div class="logo_foot">
+			<img src="../akamai-webcdn.kgstatic.net/renewal/static/images/logo_kakaogames.png" width="173" height="31" class="img_g" alt="Kakao Games Europe B.V.">
+			<img src="../akamai-webcdn.kgstatic.net/renewal/static/images/logo_pearlabyss.png" width="170" height="31" class="img_g" alt="PEARL ABYSS">
+		</div>
+	</div>
+</div>
+<script>
+var Remember = function() {
+	return {
+		getEmail: function(){ try{return window.localStorage.getItem('bdo_email'); } catch(e) {return;} },
+		setEmail: function(email){ try {window.localStorage.setItem('bdo_email', email);} catch(e) {return;} },
+		removeEmail: function(){ try { window.localStorage.removeItem('bdo_email'); } catch(e) {return;} },
+	};
+}();
+
+
+
+
+
+var require_msg = 'Required';
+
+var err_msg_display = function(classname){
+	$('.group_set.' + classname).addClass('error');
+	$('.group_set.' + classname + ' .txt_error').text(require_msg);
+}
+
+var err_msg_remove = function(classname){
+	$('.group_set.' + classname).removeClass('error');
+}
+
+var loginValidCheck = function(){
+	if ( $('#socialType').val() == 'FACEBOOK' ) {
+		return false; 	
+	}else if( $('.popup_layer.verify_layer').css("display") != "none" ){
+		return false; 
+	}else if( $('.popup_layer.restore_pass_layer').css("display") != "none" ){
+		return false;
+	}else{
+		return true; 
+	}
+	
+}
+
+$(document).ready(function($) {
+		
+	$( "#loginForm" ).submit(function( event ) {
+		if( loginValidCheck() == true ) { 
+			
+ 			var doLogin = true; 
+			err_msg_remove('common');
+			
+			if(!$('#email').val()){
+				doLogin = false; 
+				err_msg_display('email');
+			}else{
+				err_msg_remove('email');
+			}
+			
+			if(!$('#password').val()){
+				doLogin = false; 
+				err_msg_display('password');
+			}else{
+				err_msg_remove('password');
+			}
+			
+			var recaptchaResponse = grecaptcha.getResponse();
+	 		if (recaptchaResponse.length == 0 ||  recaptchaResponse == '' || recaptchaResponse ===false)  {
+	 			doLogin = false; 
+	 			err_msg_display('recaptcha'); 
+			}else{
+				err_msg_remove('recaptcha');
+			}
+	 		
+	 		if(!doLogin){
+	 			event.defaultPrevented;
+				event.stopPropagation();
+				return false; 
+	 		} 
+		}
+		
+		if ($('#email').val() != '' && $("#rememberEmail").prop('checked')) {
+    		Remember.setEmail($('#email').val());	
+    	}
+	});
+	
+	$('#rememberEmail').change(function() {
+	    if (this.checked) {
+	    	if ($('#email').val() != '') {
+	    		Remember.setEmail($('#email').val());	
+	    	}
+	    } else {
+	    	Remember.removeEmail();
+	    }
+	});
+	
+	var rememberEmail = Remember.getEmail();
+	if( rememberEmail ) {
+		$("#email").val(rememberEmail);
+		$("#rememberEmail").prop('checked', true);
+		$("#password").trigger('focus');
+	} else {
+		$("#rememberEmail").prop('checked', false);
+		$("#email").trigger('focus');
+	}
+	
+	$('.verify_layer .btn_ok').click(function(){
+		if($('#verifyCode').val() == '') {
+			$('.verify_layer .txt_error').text('Required').closest('.group_set').addClass('error');
+			return;
+		}
+		$('#tsvToken').val($('#verifyCode').val());
+					$('#loginForm').submit();
+			});
+	
+		
+		
+		
+	$('.popup_layer .btn_cancel').on('click',function(){
+	    $('.dimmed_layer').css('display','none');
+	    $('.popup_layer').css('display','none');
+	});
+	
+	$('.restore_confirm_layer .btn_main').click(function(){
+		$('.dimmed_layer').css('display','none');
+		location.href = "index.html";
+	});
+	
+	
+	window.setTimeout("pagereload()", 5 * 60 * 1000 );
+});
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+ input,textarea,select,p,li,label{font-size:16px;}
+.img_account{display:block;overflow:hidden;font-size:0;line-height:0;background:url(https://www.blackdesertonline.com/static/images/account/img_account.png) no-repeat 0 0;text-indent:-9999px}
+.ico_bullet {overflow:hidden;background:url(https://www.blackdesertonline.com/static/images/game/ico_bullet.png) no-repeat;vertical-align:top;}
+
+/*********************** 
+	partners - common
+ ***********************/
+.partner {width: 100%; margin: 0 auto;background:#FFF;padding-bottom:50px}
+.partner .tit {padding: 92px 0 96px; text-align: center;}
+.partner .tit h2 {font-weight:normal;font-size:46px;line-height:46px;text-align:center;color:#010101}
+.partner .tit h3 {font-weight:normal;font-size: 24px;line-height: 24px;}
+.partner p.tit_desc {padding-top:30px;font-size: 21px;line-height:21px;color:#575757}
+.partner .tit img {padding: 20px 0 0 0;}
+.partner_content_title {font-weight: normal;font-size:50px;color:#000;}
+
+.partner_content {position:relative;height:1576px;}
+.partner_profile{height: 518px; min-width: 1000px;padding: 30px 0 0 100px; background: url(https://www.blackdesertonline.com/static/images/partners/bg_blue.png) no-repeat bottom; z-index: 30; position: relative;}
+.partner_require{height: 510px; min-width: 1000px;padding: 50px 0 0 100px; background: url(https://www.blackdesertonline.com/static/images/partners/bg_purple.png) no-repeat bottom; z-index: 20; position: relative; top: -64px;}
+.partner_perk{height: 508px; min-width: 1000px;padding: 50px 0 0 100px; background: url(https://www.blackdesertonline.com/static/images/partners/bg_orange.png) no-repeat bottom; z-index: 10; position: relative; top: -134px;}
+.partner_profile> div, .partner_perk> div, .partner_require> div {float: left; margin-left: 10%;}
+ 
+.partner_cont_list ul.cont_bullet_list {list-style: none;}
+.partner_cont_list ul.cont_bullet_list li{position:relative;padding:22px 0 0 21px;line-height:27px;font-weight: bold;}
+.partner_cont_list ul.cont_bullet_list li:before{position:absolute;top:29px;left:0;width:13px;height:13px;background:url(https://www.blackdesertonline.com/static/images/img_black.png) -460px -180px no-repeat;content:''}
+.partner_cont_list .cont_icon_list {border-bottom: 1px solid #8b8b8b; padding: 10px 0; height: 80px;width:100%;font-size:16px;font-weight:bold;}
+.partner_cont_list .cont_icon_list.last {border-bottom: none;}
+.partner_cont_list .cont_icon_list .ico{float:left;width:80px;position:relative}
+.partner_cont_list .cont_icon_list .txt{float:left;position:relative}
+.partner_require .partner_cont_list {position: absolute; margin-left: 49%;}
+.partner_require .cont_desc {font-style: italic;font-weight:bold;margin-top:15px;max-width:500px}
+.partner_perk .partner_cont_list .cont_icon_list {height: 50px;padding:14px 0;}
+.partner_perk .partner_cont_list .cont_icon_list.last .ico{top:0;}
+.partner_perk .partner_cont_list{right:57%;position:absolute}
+.partner_profile .partner_cont_list{right:53%;position:absolute}
+
+.partner_cont_img img {z-index:99; position: relative;}
+.partner_cont_img .img_right{right:43%;}
+.partner_profile_img {position:absolute;top:-50px;}
+.partner_profile_img img {top:0;left: 530px;}
+.partner_require_img {position:absolute;top:460px;right:58%;}
+.partner_require_img img {top:0; left: 100px;}
+.partner_perk_img {position:absolute;top:945px;}
+.partner_perk_img img {top:0; left: 540px;}
+
+
+/************* 
+	form 
+*************/
+.partner_submit {color:#8b8b8b;width:70%;width:940px;margin:0 auto;}
+{padding:20px 0 24px;background-color:#ebebeb; margin-top: 30px;}
+.wrap_box_submit {position:relative;width:940px;margin:0 auto;padding-top:53px;}
+.wrap_box_submit .group_detail {background-image:url(https://www.blackdesertonline.com/static/images/line_tartan.png);margin: 0px;display:table;padding:22px 0;}
+
+.frm_partners .frm_title {font-size: 24px; color:#8b8b8b;}
+.frm_partners .frm_sub_title {font-size: 16px;display:table-row;}
+.partner_submit .half_line{background: url(https://www.blackdesertonline.com/static/images/partners/line2.png) no-repeat 0 0;display:inline-block;width:252px;height:21px;margin-left:13px;padding:3px 0;}
+.frm_partners .space{float: left; padding: 4px; }
+
+.frm_partners .group_set {display:table-cell;padding:16px 10px 0px;box-sizing:border-box;position:relative;;}
+.frm_partners .group_set.rt {float:right;margin-top:-24px;width:476px;}
+.frm_partners .group_set input {color: #272727; overflow: hidden;padding:13px 77px 13px 22px;font-size:16px;line-height:28px;}
+.frm_partners .group_set textarea {color: #272727; border: 1px solid #ccc; margin:5px 0 4px;padding:10px 16px; }
+.frm_partners .error + .choice_check{margin-top:29px}
+.frm_partners .choice_check .txt_error{display:none;font-size:16px;line-height:33px}
+.frm_partners .choice_check.error .txt_error{display:block}
+.frm_partners .agree_create{width:100%}
+.frm_partners .error .box_tf, 
+.frm_partners .error textarea, 
+/* .frm_partners .error .lab_comm, 2018-02-16 체크박스 오류border 제거 by Ria Yu */
+.frm_partners .error .opt_comm, 
+.frm_partners .error.opt_comm {border:1px #b34357 solid;}
+.frm_partners .error .ico_error{display:block}
+.frm_partners .ico_error{display:none;position:absolute;top:15px;right:15px;width:24px;height:24px;background-position:-450px -150px}
+
+/* input box */
+.frm_partners .box_tf {width:454px;}
+
+/* selectbox */
+.frm_partners .group_set .opt_comm {width:454px;margin:0}
+.frm_partners .group_set .group_birth .opt_comm {position:relative;margin-right: 5px; height: 54px;width:32.1%;float:left;background-color:#FFF}
+.frm_partners .group_set .group_birth .opt_comm:last-child{margin-right:0}
+.frm_partners .group_birth .opt_comm .link_selected .ico_arr{top:22px;}
+.frm_partners .opt_comm .link_selected{color:#AAA;height:54px;line-height:54px;}
+.frm_partners .opt_comm .link_selected:after{content:none}
+.frm_partners .opt_comm.opt_on .link_selected{color:#272727}
+.frm_partners .group_set .select_option{position:absolute;top:1px;left:0;z-index:10;width:100%;height:100%;border:0;opacity:0.01}
+
+
+
+/* checkbox */
+.frm_partners .check_agree{overflow:hidden;position:relative;}
+.frm_partners .check_agree .lab_check{display:block;padding-left:26px;cursor:pointer}
+.frm_partners .check_agree .inp_check:checked + .lab_check .img_account{background-position:-60px -130px}
+.partner .btn_apply {margin-top:20px}
+/* .btn_signup:hover {background-color:#a00d0a;text-decoration:none} */
+

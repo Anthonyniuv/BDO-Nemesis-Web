@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title> The Best MMORPG | Black Desert Online </title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1920, user-scalable=yes, maximum-scale=1">
+	<meta name="description" content="Black Desert Online is the next-gen action driven sandbox MMORPG. Featuring one of the richest character creation systems, an immense seamless world, and epic Siege Wars.">
+	<meta name=“keywords” content=“black desert, BDO, game, MMORPG, online game, RPG, role playing, open world, black desert forum, BDO forum, kakao games”>
+
+	<link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="static/blackdesert.ico" type="image/x-icon">
+	<link rel="icon" href="https://akamai-webcdn.kgstatic.net/renewal/static/blackdesert.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="static/css/common4ba8.css?v=202003131130">
+
+	<style>
+		
+		@media (max-width: 1800px) {
+							.gnb_comm .link_gnb{padding:34px 21px !important}
+					}
+	</style>
+	<script type="text/javascript" src="../akamai-webcdn.kgstatic.net/renewal/static/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../akamai-webcdn.kgstatic.net/renewal/static/js/common94c8.js?v=202003131440"></script>
+<script>
+	window.cookieconsent_options = {"theme":"dark-bottom","domain":".blackdesertonline.com", "message":"I agree to the use of cookies by Kakao Games on the website for personalized marketing purposes.","dismiss":"Accept","learnMore":"More information","link":"https://www.blackdesertonline.com/legal/privacy-policy"};
+</script>
+<script type="text/javascript" src="../akamai-webcdn.kgstatic.net/renewal/static/cookieconsent/cookieconsent30f4.js?v=3"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-939288197"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-939288197');
+  gtag('config', 'AW-808304736');
+</script>
+<script>
+	var GA_ID = "UA-68713027-5";
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','../connect.facebook.net/en_US/fbevents.js');
+	
+</script>
+<script>
+
+var setting_third_party = function(cookieFlag){
+	if(cookieFlag == "accept"){
+		if(typeof fbq == 'function'){
+			fbq('consent', 'grant');
+			fbq('init', '1793387054280743');
+			fbq('track', "PageView");
+		}
+		
+		if(typeof ga == 'function'){ 
+		
+			ga('create', GA_ID, 'auto');
+			ga('set', 'userId', '${uid}');
+						ga('require', 'ecommerce');
+		  	ga('send', 'pageview');
+		  	
+		  													ga('send', 'event', 'page_register', 'register' , 'EN', '');
+		
+		}
+	  	
+	}else{
+		if(typeof fbq == 'function'){ 
+			fbq('consent', 'revoke');
+		}
+		if(typeof ga == 'function'){ 
+			ga('create', GA_ID, {'storage': 'none'});
+		}
+	}
+
+}
+	if( cookie_check_ok() ) {
+		setting_third_party("accept"); 
+	} else {
+		setting_third_party("none");
+	}
+	
+</script>
+
+</head>
+<body>
+	
+	<script>
+  function fb_login() {
+  	FB.login(function(response) {
+	    if (response.authResponse) {
+	       var accessToken = response.authResponse.accessToken;
+	       FB.api('/me', {fields: 'email,age_range'}, function(me) {
+	   		$('#accessToken').val(accessToken);
+	   		$('#socialId').val(me.id);
+	   		$('#socialEmail').val(me.email);
+	   		$('#socialType').val('FACEBOOK');
+	   		$('#email').val(me.email);
+	   		
+	   		// redirect to social register form
+	   		$('#register_form').attr("action", "/register");
+	   		$('#register_form').submit();
+	       });
+	    } else {
+	     console.log('User cancelled login or did not fully authorize.');
+	    }
+	}, {scope: 'email,public_profile'});
+  }
+  
+  window.fbAsyncInit = function() {
+	  FB.init({
+	    appId      : '663791690327711',
+	    xfbml      : true,  // parse social plugins on this page
+	    version    : 'v5.0' // use graph api version
+	  });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "../connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+	
+
+
+
+<div id="kakaoHead" class="k_head ">
+	
+	<div class="inner_head">
+		<h1 class="tit_black"><a href="index.html" class="link_sale"><img src="../akamai-webcdn.kgstatic.net/renewal/static/images/main/logo_1.png" class="img_g" alt="LOGO"></a></h1>
+		<div id="kakaoGnb">
+			<h2 class="screen_out">Black Desert Menu</h2>
+			<ul class="gnb_comm en">
+				<li>
+					<a href="news/list.html" class="link_gnb">NOTICIAS</a>
+					<div class="gnb_sub">
+						<ul class="list_sub">
+							<li><a href="news/list/announcement.html" class="link_gnb_sub">AVISOS</a></li>
+							<li><a href="news/list/event.html" class="link_gnb_sub">EVENTOS</a></li>
+							<li><a href="news/list/maintenance.html" class="link_gnb_sub">MANUTENÇÃO</a></li>
+							<li><a href="news/list/update.html" class="link_gnb_sub">ATUALIZAÇÕES</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<span class="link_gnb">SHOP</span>
+					<div class="gnb_sub">
+						<ul class="list_sub">
+							<li><a href="shop/package.html" class="link_gnb_sub">PACOTES</a></li>
+							<li><a href="shop/cash.html" class="link_gnb_sub">CASH EM JOGO</a></li>
+							<li><a href="shop/redeem.html" class="link_gnb_sub">RESGATAR CUPOM</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="download.html" class="link_gnb">DOWNLOAD</a></li>
+				<li>
+					<span class="link_gnb">COMUNIDADE</span>
+					<div class="gnb_sub">
+						<ul class="list_sub">
+							<li><a href="https://community.blackdesertonline.com/" target="_blank" class="link_gnb_sub">FORUM<span class="img_black ico_link"></span></a></li>
+							<li>
+								<a class="link_gnb_sub">PATROCINADORES</a>
+								<!-- 2019-06-18 추가 시작 -->
+								<ul class="list_sub2">
+									<li><a href="partners.html" class="link_gnb_sub2"><span class="txt_g">SE INSCREVA</span></span></a></li>
+									<li><a href="halloffame.html" class="link_gnb_sub2"><span class="txt_g">HALL DA FAMA
+</span></span></a></li>
+								</ul>
+								<!-- // 2019-06-18 추가 끝 -->
+							</li>
+
+							<li><a href="https://www.discord.gg/kakaogames" class="link_gnb_sub" target="_blank">DISCORD</a></li>
+							<li><a href="https://nwiki.blackdesertonline.com/" target="_blank" class="link_gnb_sub">WIKI<span class="img_black ico_link"></span></a></li>
+							<li><a href="giftpackage.html" class="link_gnb_sub">PACOTE GIFT</a></li></a>
+							<li><a href="guestpass.html" class="link_gnb_sub">PACOTE FANTASMA</a></li>
+							<li><a href="referral.html" class="link_gnb_sub">REFERÊNCIAS</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="https://downspot.ga/" id="" class="link_gnb" style="cursor:pointer" data-locale="EN">DOWNSPOT<span class="img_black ico_link"></span></a></li>
+			</ul>
+			<ul class="gnb_with">
+				<li>
+					<strong class="screen_out">Language setting</strong>
+					<div class="opt_language">
+		                <strong class="screen_out">Language Select Box</strong>
+		                <div class="link_selected"><span class="img_black ico_lang"></span>PORTUGUÊS<span class="screen_out">Selected</span></div>
+		                <input type="hidden" value="Language Select">
+		                <div class="box_opt">
+		                    <em class="screen_out">Select Option</em>
+		                    <ul class="list_opt">
+		                    																																<li><a href="lang=EN.html" class="link_option gnb_lang_link" data-value="EN">INGLÊS</a></li>
+																																<li><a href="lang=ES.html" class="link_option gnb_lang_link" data-value="ES">ESPANHOL</a></li>
+																	                    </ul>
+		                </div>
+		            </div>
+					<div id="_languageForm"></div>
+				</li>
+									<li><a href="login.html" class="link_gnb">ENTRAR</a></li>
+					<li><a href="register.html" class="link_gnb">REGISTRAR-SE</a></li>
+				
+									<li><a href="" class="link_sale"><img src="../akamai-webcdn.kgstatic.net/renewal/static/images/events/remaster/WAR_PT.png" class="img_g" alt="BUY NOW -60%"></a></li>
+							</ul>
+		</div>
+	</div>
+</div><!-- // kakaoHead -->
+<script type="text/javascript">
+$(document).ready(function($) {
+	var language_json = {};
+	var form = $("<form/>", {id:'__languageForm',action:'',method:"GET"} );
+	for(var key in language_json) {
+		form.append( $("<input>",{type:'hidden',name:key,value:language_json[key]}) );
+	}
+	$("#_languageForm").append(form);
+
+	$(".gnb_lang_link").on("click",function(){
+		var form =$("#__languageForm");
+		form.append( $("<input>",{type:'hidden',name:'lang',value:$(this).attr("data-value")}) );
+		form.submit();
+	});
+});
+</script>
+<hr class="hide">
+	<div class="cont_login" id="kakaoContent">
+		<div id="cMain">
+			<div id="mArticle">
+				<div class="bg_cover"></div>
+				<div class="detail_black">
+					<h2 class="tit_detail" id="kakaoBody">CREATE YOUR ACCOUNT</h2>
+					<p class="desc_login">Join us on your next great adventure.</p>
+					
+					
+					<form id="register_form" action="https://www.blackdesertonline.com/register/submit" method="POST">
+						<fieldset>
+							<legend class="screen_out">create account form</legend>
+							
+							<div class="form_create">
+								<div class="group_set"> <!-- 에러일 때 error 클래스 추가 / 확인 되었을 때 confirm 클래스 추가 -->
+									<div class="box_tf">
+										<label class="img_black ico_email" for="email">Email</label>
+										<input class="tf_comm" id="email" name="email" placeholder="Email" type="text" value=""><span class="img_black ico_error"></span>
+									</div>
+									<span class="txt_error"></span>
+								</div>
+								<div class="group_set "> <!-- 에러일 때 error 클래스 추가 / 확인 되었을 때 confirm 클래스 추가 -->
+									<div class="box_tf">
+										<label class="img_black ico_password" for="password">Password (8~30 Characters)</label>
+										<input class="tf_comm" id="password" name="password" placeholder="Password (8~30 Characters)" type="password"><span class="img_black ico_error"></span>
+									</div>
+									<span class="txt_error"></span>
+								</div>
+								<div class="group_set "> <!-- 에러일 때 error 클래스 추가 / 확인 되었을 때 confirm 클래스 추가 -->
+									<div class="box_tf">
+										<label class="img_black ico_password" for="passwordConfirm">Confirm Password</label>
+										<input class="tf_comm" id="passwordConfirm" name="passwordConfirm" placeholder="Confirm Password" type="password"> <span class="img_black ico_error"></span>
+									</div>
+									<span class="txt_error"></span>
+								</div>
+								<strong class="tit_login">Birthday</strong>
+								<div class="group_set group_birth"> <!-- 에러일 때 error 클래스 추가 -->
+									<div class="opt_comm"> <!--펼침시 클래스 opt_open 부여-->
+										<a class="link_selected" href="javascript:void(0)"> <!-- 옵션 선택되었을 때 selected 클래스 추가 --> 
+											<strong class="screen_out">birth Year select box</strong>
+											<label class="sel_value" for="birthYear">Year</label>
+											<span class="screen_out">selected</span> <span class="img_black ico_arr"></span>
+										</a>
+										<input class="sel_value" type="hidden" id="birthYear" name="birthYear">
+										<div class="box_opt">
+											<em class="screen_out">select option</em>
+											<ul class="list_opt">
+																								<li><a class="link_option" href="javascript:void(0)">2015</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2014</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2013</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2012</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2011</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2010</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2009</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2008</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2007</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2006</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2005</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2004</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2003</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2002</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2001</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">2000</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1999</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1998</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1997</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1996</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1995</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1994</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1993</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1992</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1991</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1990</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1989</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1988</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1987</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1986</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1985</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1984</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1983</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1982</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1981</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1980</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1979</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1978</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1977</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1976</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1975</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1974</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1973</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1972</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1971</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1970</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1969</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1968</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1967</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1966</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1965</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1964</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1963</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1962</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1961</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1960</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1959</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1958</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1957</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1956</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1955</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1954</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1953</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1952</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1951</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1950</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1949</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1948</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1947</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1946</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1945</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1944</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1943</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1942</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1941</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1940</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1939</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1938</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1937</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1936</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1935</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1934</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1933</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1932</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1931</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1930</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1929</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1928</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1927</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1926</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1925</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1924</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1923</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1922</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1921</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1920</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1919</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1918</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1917</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1916</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1915</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1914</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1913</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1912</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1911</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1910</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1909</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1908</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1907</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1906</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1905</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1904</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1903</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1902</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1901</a></li>
+																								<li><a class="link_option" href="javascript:void(0)">1900</a></li>
+																							</ul>
+										</div>
+									</div>
+									<div class="opt_comm"> <!--펼침시 클래스 opt_open 부여-->
+										<a class="link_selected" href="#none"> <!-- 옵션 선택되었을 때 selected 클래스 추가 --> 
+										<strong class="screen_out">birth Month select box</strong>
+											<label class="sel_value" for="birthMonth">Month</label>
+											<span class="screen_out">selected</span>
+											<span class="img_black ico_arr"></span>
+										</a>
+										<input class="sel_value" type="hidden" id="birthMonth" name="birthMonth">
+										<div class="box_opt">
+											<em class="screen_out">select option</em>
+											<ul class="list_opt">
+												<!--활성화 된 옵션에 on 클래스 추가-->
+																												                   																<li><a class="link_option" href="javascript:void(0)">01</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">02</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">03</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">04</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">05</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">06</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">07</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">08</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">09</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">10</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">11</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">12</a></li>
+																							</ul>
+										</div>
+									</div>
+									<div class="opt_comm"> <!--펼침시 클래스 opt_open 부여-->
+										<a class="link_selected" href="#none"> <!-- 옵션 선택되었을 때 selected 클래스 추가 -->
+										<strong class="screen_out">birth Day select box</strong>
+											<label class="sel_value" for="birthDay">Day</label>
+											<span class="screen_out">selected</span>
+											<span class="img_black ico_arr"></span>
+										</a>
+										<input class="sel_value" type="hidden" id="birthDay" name="birthDay">
+										<div class="box_opt">
+											<em class="screen_out">select option</em>
+											<ul class="list_opt">
+												<!--활성화 된 옵션에 on 클래스 추가-->
+																												                   																<li><a class="link_option" href="javascript:void(0)">01</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">02</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">03</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">04</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">05</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">06</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">07</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">08</a></li>
+																												                   																<li><a class="link_option" href="javascript:void(0)">09</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">10</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">11</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">12</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">13</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">14</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">15</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">16</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">17</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">18</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">19</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">20</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">21</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">22</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">23</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">24</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">25</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">26</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">27</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">28</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">29</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">30</a></li>
+																																				<li><a class="link_option" href="javascript:void(0)">31</a></li>
+																							</ul>
+										</div>
+									</div>
+									<span class="txt_error"></span>
+								</div>
+								<div class="agree_create">
+									<div class="choice_comm choice_check group_set">
+										<input class="inp_comm" id="termsAgree" name="termsAgree" type="checkbox" value="Y">
+										<label class="lab_comm" for="termsAgree"><span class="img_black"></span>I have read <a href="account/TermsOfUse.html" class="link_g" target="_blank">TERMS OF USE</a> and accept them.<span class="txt_require">*</span></label>
+										<span class="txt_error"></span>
+									</div>
+									<div class="choice_comm choice_check group_set">
+										<input class="inp_comm" id="ppAgree" name="ppAgree" type="checkbox" value="Y">
+										<label class="lab_comm" for="ppAgree"><span class="img_black"></span>I have read <a href="account/Policy.html" class="link_g" target="_blank">PRIVACY POLICY</a> and accept them.<span class="txt_require">*</span></label>
+										<span class="txt_error"></span>
+									</div>
+									<div class="choice_comm choice_check">
+										<input class="inp_comm" id="newsLetterAgree" name="newsLetterAgree" type="checkbox" value="Y">
+										<label class="lab_comm" for="newsLetterAgree"><span class="img_black"></span> Sign me up to receive game newsletters and exclusive offers.</label>
+									</div>
+								</div>
+
+
+								<button id="btn_register" class="btn_black" type="button"><span class="inner_btn">SIGN UP</span></button>
+								
+								<div class="social_account ">
+									<span class="txt_social"><span class="inner_txt">Or</span></span>
+									<a class="btn_black btn_facebook" href="javascript:void(0);" onclick="fb_login();"><span class="inner_btn"><span class="img_black ico_facebook"></span>Sign up with Facebook <!-- <span class="img_black ico_connect"></span> --></span></a>
+								</div>
+								
+								<input type="hidden" id="accessToken" name="accessToken" value="" />
+								<input type="hidden" id="socialId" name="socialId" value="" />
+								<input type="hidden" id="socialType" name="socialType" value="WEB" />
+								<input type="hidden" id="socialEmail" name="socialEmail" value="" />
+								<input type="hidden" name="trcode" value="" />
+								<input type="hidden" name="trid" value="" />
+								<input type="hidden" name="utm_source" value="" />
+							</div>
+						</fieldset>
+						
+					</form>
+				</div>
+					
+			</div>
+			<!--// mArticle -->
+			<div class="black_follow" id="cEtc">
+	<h2 class="tit_follow">FOLLOW US</h2>
+	<ul class="list_sns">
+		<li>
+			<a class="img_black link_facebook" href="https://www.facebook.com/BlackDesertOnline" target="_blank">Facebook</a>
+		</li>
+		<li>
+			<a class="img_black link_twitter" href="https://twitter.com/BDO_news" target="_blank">Twitter</a>
+		</li>
+		<li>
+			<a class="img_black link_youtube" href="https://www.youtube.com/channel/UCcO-TjLkDNzvYrlPkOHgnfA" target="_blank">Youtube</a>
+		</li>
+		<li>
+			<a class="img_black link_instagram" href="https://www.instagram.com/blackdesertonline_official/" target="_blank">Instagram</a>
+		</li>
+		<li>
+		<a class="img_black link_twich" href="https://www.twitch.tv/blackdesertonlineofficial/" target="_blank">Twitch</a>
+		</li>
+		<li>
+		<a class="img_black link_discord" href="https://discord.gg/kakaogames" target="_blank">Twitch</a>
+		</li>
+	</ul>
+</div>
+
+		</div>
+		<!-- // cMain -->
+	</div>
+	<!-- // kakaoContent -->
+	<hr class="hide">
+<div id="kakaoFoot" class="k_foot">
+	<div class="inner_foot">
+		<h2 class="screen_out">Service Information</h2>
+		<div class="info_pegi">
+			<img src="../akamai-webcdn.kgstatic.net/renewal/static/images/img_pegi.png" class="img_g" alt="The content of this game is suitable for persons aged 16 years and over only. It contains: Realistic looking violence - Encouragement of the use of alcohol/tobacco">
+		</div>
+		<div class="info_company">
+			<a href="account/TermsOfUse.html" class="link_info en">TERMS OF USE</a>
+			<span class="txt_bar en">|</span>
+			<a href="account/AboutUs.html" class="link_info en">ABOUT US</a>
+			<span class="txt_bar en">|</span>
+			<a href="account/Policy.html" class="link_info en">PRIVACY POLICY</a>
+			<span class="txt_bar en">|</span>
+							<a href="https://blackdesert.zendesk.com/hc/en-us" target="_blank" class="link_info en">
+						SUPPORT</a>
+			<small class="txt_copyright en">&copy; 2015-2020 Kakao Games Europe B.V.<br>All copyrights and trademarks are the property of their respective owners.</small>
+		</div>
+		<div class="logo_foot">
+			<img src="../akamai-webcdn.kgstatic.net/renewal/static/images/logo_kakaogames.png" width="173" height="31" class="img_g" alt="Kakao Games Europe B.V.">
+			<img src="../akamai-webcdn.kgstatic.net/renewal/static/images/logo_pearlabyss.png" width="170" height="31" class="img_g" alt="PEARL ABYSS">
+		</div>
+	</div>
+</div>
+	<script type="text/javascript" src="../akamai-webcdn.kgstatic.net/renewal/static/js/jquery-1.11.3.min.js"></script>
+	<script src='../www.google.com/recaptcha/api.js'></script>
+	<script>
+$(document).ready(function(){
+	$('.cont_login .link_selected').click(function(){
+		if($(this).parent().hasClass("opt_open")){
+			$(this).parent().removeClass("opt_open");
+		} else {
+			$(this).parent().addClass("opt_open");
+		}
+	});
+	
+	$('.cont_login .link_option').click(function() {
+		var $fieldObj = $(this).closest('.opt_comm').removeClass('opt_open');
+		var value = $(this).text();
+		$fieldObj.find('.sel_value').val(value).text(value);
+		$fieldObj.find('.link_selected').addClass('selected');
+		$(this).closest('ul').find('li').removeClass('on');
+		$(this).parent().addClass('on');
+	});
+	
+	$('.cont_login .list_opt > li').click(function(){
+		$(this).parent().parent().find(".link_selected").text($(this).text());
+		$(this).parent().parent().find("input").val($(this).text());
+		$(this).parent().parent().removeClass("opt_open");
+	});
+	
+	$(".cont_login input[type=text]").keyup(function(event) {
+		if (event.keyCode == 37 || event.keyCode == 39 || event.keyCode == 8 ) return true;
+		var value = $(this).val();
+		if (value.length > 100) {
+			value = value.substring(0, 100);
+		}
+		$(this).val(value);
+	});
+	
+	$('#btn_register').click(function(e) {
+		e.preventDefault();
+		$('.error').removeClass('error');
+		
+		if (isFormValid()) {
+			$.post('/register/submit', $('#register_form').serialize())
+			.done(function(data) {
+				grecaptcha.reset();
+				
+				if (100 == data.api.code) {
+					if (($('#socialType').val() == 'WEB')) {
+						window.location.href = '/register/success?key=' + data.result.key;
+					} else {
+						window.location.href = 'register/email/confirm658c.html?socialType=FACEBOOK';
+					}
+					return;
+				}
+				
+				var errorMsg = "";
+				
+				switch (data.api.code) {
+				case 901: 
+					errorMsg = 'Required'; break;
+				case 801:
+					// default
+				case 700: 
+					errorMsg = "Email address must be formatted correctly."; break;
+				case 701:
+					errorMsg = "Password should be consist of 8-30 characters."; break;
+				case 702: 
+					errorMsg = "The same character cannot be used over two consecutive times."; break;
+				case 703: 
+					errorMsg = "Password does not match."; break;
+				case 704: 
+					errorMsg = "You must be 16 or older."; break;
+				case 705: 
+					errorMsg = "Required"; 
+					// 서버에서 체크하는 errorField name이 html의 error field명과 일치하지 않으므로 직접 메시지를 입력한다.
+					$('#recaptchaErrorMsg').text(errorMsg);
+					break;
+				case 706: 
+					errorMsg = "Email already exists."; break;
+				case 707: 
+					errorMsg = "This email domain is prohibited from use"; break;
+				default:
+					errorMsg = "Unexpected error occurred. Please try again later.";
+				}
+				
+				if (!data.api.additionalInfo) {
+					alert(errorMsg); return;
+				}
+				
+				var name = data.api.additionalInfo.name;
+				errorMsg = data.api.additionalInfo.errorMsg || errorMsg;
+				
+				var $box = $('[name="' + name + '"]').closest('.group_set');
+				$box.addClass('error').find('.txt_error').text(errorMsg);;
+			})
+			.fail(function(data) {
+				alert("Unexpected error occurred. Please try again later.");
+			})
+		}
+	});
+});
+
+function isFormValid() {
+	var isValid = true;
+	var invalidArr = [];
+	var isNotSocial = $('#socialType').val() == 'WEB';
+	
+	if (!$('#email').val()) {
+		invalidArr.push('email');
+	}else if(validateDomain($('#email').val()) == -1){
+		invalidArr.push('emailDomain');
+	}
+	if (!$('#password').val() && isNotSocial) {
+		invalidArr.push('password');
+	}
+	if (!$('#passwordConfirm').val() && isNotSocial) {
+		invalidArr.push('passwordConfirm');
+	}
+	if (!$('#birthYear').val() || !$('#birthMonth').val() || !$('#birthDay').val()) {
+		invalidArr.push('birthYear');
+	}
+	if (!$('#termsAgree').prop('checked')) {
+		invalidArr.push('termsAgree');
+	}
+	if (!$('#ppAgree').prop('checked')) {
+		invalidArr.push('ppAgree');
+	}
+	var recaptchaResponse = grecaptcha.getResponse();
+	if (isNotSocial && (recaptchaResponse.length == 0 ||  recaptchaResponse == '' || recaptchaResponse ===false) ) {
+		invalidArr.push('recaptcha');
+	}
+	
+	$.each(invalidArr, function(idx, name) {
+		
+		if(name == 'emailDomain'){
+			var name = "email";
+			var requiredMsg = 'This email domain is prohibited from use';
+		}else { 
+			var requiredMsg = 'Required';
+		}
+			
+		var $field = $('[name="' + name + '"]');
+	
+		if ($field) {
+	// 		console.log(name);
+			$field.closest('.group_set').addClass('error').find('.txt_error').text(requiredMsg);
+			isValid = false;
+		}
+	});
+	
+	return isValid;
+}
+
+	var mailDomains = ["yopmail.com","163.com","byom.de","drope.ml","dropmail.html","emlpro.com","10mail.org","bcaoo.com","120mail.com","yomail.info","bcaoo.com","emlpro.com","4047.com","mail.bccto.html","ag163.top","4057.com","byom.de","drope.ml","dropmail.html","emlpro.com","10mail.org","bcaoo.com","yomail.info","jnpayy.com","dawin.com","besttempmail.com","a4papersize.net","navientlogin.net","programmingant.com","castlebranchlogin.com","iffymedia.com","figurescoin.com","payspun.com","thrubay.com","claimab.com","bestsoundeffects.com","vradportal.com","hotmali.cn","evcmail.com","xuyushuai.com","fxfmail.com","bccto.html","126mali.cn","mail166.cn","yeahm.cn","119mail.com","maildrop.html","oqiwq.com","vimail24.com","ionemail.net","omegafive.net","five-club.com","five-plus.net","malboxe.com","hd-mail.com","top-mails.net","aklqo.com","alltopmail.com","onemail1.com","airmailbox.website","givememail.club","urhen.com"]; 
+
+function validateDomain(mail){
+  var idx1 = mail.indexOf("@");
+  if(idx1>-1){
+    var splitStr = mail.split("@");
+    if(mailDomains.indexOf(splitStr[1])>-1){
+    	return -1;
+    }else{
+    	return 1;
+    }
+  }
+}
+
+</script>
+
+</body>
+
+
+</html>
