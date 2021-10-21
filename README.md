@@ -12,6 +12,8 @@
 
 - Just drag and drop folder on your desktop and open index.html file.
 
+Crédits: Posted by Ledie, Nemesis.
+
 ### Pictures
 
 ![bdo](https://user-images.githubusercontent.com/89811188/138052014-9b957089-1a71-4846-87bf-ff8973c01849.png)
